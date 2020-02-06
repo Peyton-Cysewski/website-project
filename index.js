@@ -15,3 +15,6 @@ if (num >= 1) {
 }
 
 document.write('<h1 ' + id + '>' + words + '</h1>');
+
+alert('Be Prepared for pure, unadulterated awesomeness!!!');
+confirm('Are you ready?');
