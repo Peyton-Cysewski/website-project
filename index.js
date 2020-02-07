@@ -28,3 +28,19 @@ alert('Be Prepared for pure, unadulterated awesomeness!!!');
 function run_confirm () {
 confirm('Are you ready?');
 }
+
+function filler() {
+
+var fill = '#';
+var total = '';
+var answer = prompt('Give a single digit number between 1 and 10');
+
+while (isNaN(answer) || (answer > 10) ) {
+    answer = prompt('Please give a NUMBER BETWEEN 1 and 10')
+};
+// console.log(answer);
+for (var i = 0; i < answer; i++) {
+    total = total + fill;
+}
+return total;
+}

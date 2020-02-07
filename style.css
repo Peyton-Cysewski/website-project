@@ -1,6 +1,8 @@
 .photo {
     width: 90%;
     min-width: 100px;
+    border: 5px solid rosybrown;
+    border-radius: 15px;
 }
 
 #logo {
@@ -29,6 +31,11 @@ header {
     color: red;
 }
 
+header nav {
+padding: 10px 0px 10px 0px;
+background-color: salmon;
+}
+
 header nav ul {
     text-align: center;
     display: inline-block;
@@ -40,10 +47,13 @@ header nav ul li {
     display: inline-block;
     width: 20%;
     min-width: 100px;
+    border: 1px solid black;
+    margin: 0px 5px 0px 5px;
 }
 
 main {
-background-color: rgb(128, 170, 219);
+/* background-color: rgb(128, 170, 219); */
+background-image: linear-gradient(to right, red, white, blue);
 text-align: center;
 min-width: 550px;
 }
@@ -52,8 +62,8 @@ main article {
     display: inline-block;
     width: 25%;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 20px 0px 50px;
+    margin: 0px 10px 0px 10px;
     min-width:100px;
 }
 
@@ -77,6 +87,7 @@ footer nav ul li {
     display: inline-block;
     width: 16%;
     min-width: 100px;
+    padding-bottom: 25px;
 }
 
 footer section p {
