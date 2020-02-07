@@ -1,6 +1,6 @@
 
 
-function title_prompt() {
+function title_prompt() { //Tests prompts
 
 //Do you like Planes?
 var num = prompt('Do you like airplanes (1 = yes, 0 = no)?');
@@ -21,26 +21,26 @@ if (num >= 1) {
 document.write('<h1 ' + id + '>' + words + '</h1>');
 }
 
-function run_alert () {
+function run_alert () { //Tests alerts
 alert('Be Prepared for pure, unadulterated awesomeness!!!');
 }
 
-function run_confirm () {
+function run_confirm () { //Tests confirm
 confirm('Are you ready?');
 }
 
-function filler() {
+function filler() { //Makes a lit of #'s to test function ability
 
-var fill = '#';
-var total = '';
-var answer = prompt('Give a single digit number between 1 and 10');
+    var fill = '#';
+    var total = '';
+    var answer = prompt('Give a single digit number between 1 and 10');
 
-while (isNaN(answer) || (answer > 10) ) {
-    answer = prompt('Please give a NUMBER BETWEEN 1 and 10')
-};
-// console.log(answer);
-for (var i = 0; i < answer; i++) {
-    total = total + fill;
-}
-return total;
+    while (isNaN(answer) || (answer > 10) ) { //validation loop
+        answer = prompt('Please give a NUMBER BETWEEN 1 and 10')
+    };
+    
+    for (var i = 0; i < answer; i++) { //makes the string of characters to desired length
+        total = total + fill;
+    }
+    return total;
 }
